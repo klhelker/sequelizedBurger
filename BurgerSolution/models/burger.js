@@ -1,4 +1,4 @@
-var orm = require("../config/orm.js");
+var orm = require("../config/"? where orm was");
 
 var burger = {
   all: function(cb) {
@@ -7,7 +7,7 @@ var burger = {
     });
   },
   create: function(name, cb) {
-    orm.create("burgers", [
+    "?where Orm was".create("burgers", [
       "burger_name", "devoured"
     ], [
       name, false
@@ -15,7 +15,7 @@ var burger = {
   },
   update: function(id, cb) {
     var condition = "id=" + id;
-    orm.update("burgers", {
+    "?whereORM was".update("burgers", {
       devoured: true
     }, condition, cb);
   }
